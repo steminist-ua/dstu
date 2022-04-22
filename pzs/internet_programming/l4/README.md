@@ -37,7 +37,7 @@
 ## Доповнення до роботи (мобільна адаптація - медіа запити): 
 - Обов'язковість використання мета-тегу `viewport` у html https://www.w3schools.com/css/css_rwd_viewport.asp
 - Приклад медіа-запитів (мобільної адаптації). Тут же наведено ключові точки розмірів екранів (наприклад, Extra small devices - max-width: 600px) https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-    - Додатковий опис точок: https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
+    - Додатковий опис точок (з орієнтацією екрану): https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/
     - Додатковий опис точок 2: 
         - 320px — 480px: Mobile devices
         - 481px — 768px: iPads, Tablets
