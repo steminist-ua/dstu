@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.cabecalho {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.chamada {
+    background-color: #2283c9;
+    padding: 60px 15px;
+}
+
+.chamada {
+    h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+.imoveis {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.imoveis {
+    article {
+        margin: 30px 0;
+
+        img {
+            max-width: 100%;
+        }
+
+        h2{
+            font-size: 20px;
+            color: #686868;
+            margin-bottom: 25px;
+        }
+    }
+    .botao{
+        padding: 10px 15px;
+        background-color: #127d00;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .chamada {
+        padding: 120px 15px;
+
+        h1 {
+            font-size: 54px;
+        }
+    }
+
+    .imoveis {
+        article {
+            float: left;
+            width: calc(50% - 10px);
+
+            &:nth-child(even) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
