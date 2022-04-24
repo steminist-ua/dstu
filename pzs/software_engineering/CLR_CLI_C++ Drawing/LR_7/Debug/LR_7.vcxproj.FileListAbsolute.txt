@@ -1,0 +1,6 @@
+G:\1\Контруирование ПЗ\LR_7\LR_7\Debug\LR_7.vcxproj.AssemblyReference.cache
+G:\1\Контруирование ПЗ\LR_7\LR_7\Debug\LR_7.Form1.resources
+G:\1\Контруирование ПЗ\LR_7\LR_7\Debug\LR_7.Form2.resources
+G:\1\Контруирование ПЗ\LR_7\LR_7\Debug\LR_7.Form3.resources
+G:\1\Контруирование ПЗ\LR_7\LR_7\Debug\LR_7.Form4.resources
+G:\1\Контруирование ПЗ\LR_7\LR_7\Debug\LR_7.vcxproj.GenerateResource.cache
