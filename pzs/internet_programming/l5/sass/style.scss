@@ -1,0 +1,117 @@
+div{
+    min-height: 100px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+// змінні 
+$color-red: #ff0000;
+$font-size: 30px;
+$margin-top: 50;
+
+.div1{
+
+    // використання змінних
+    color: $color-red;
+    font-size: $font-size;
+    
+    background-color: yellow;
+    padding: 30px;
+}
+
+
+// варіант реалізації темної теми на сайті
+$dark-theme: false !default;    // початкове значення теми (за замовчуванням вказали false, тобто НЕ темна тема)
+$primary-color: #f8bbd0 !default; // початкове значення кольору при використанні теми
+$accent-color: #6a1b9a !default;  // початкове значення кольору при використанні теми
+
+// перевірка, чи вімкнено зараз на сайті темну тему, чи $dark-theme дорівнює true
+@if $dark-theme {
+
+    // якщо так, то змінєюмо кольори теми
+    $primary-color: darken($primary-color, 60%);
+    $accent-color: lighten($accent-color, 60%);
+}
+
+.div1 {
+    // встановлюємо кольори теми
+    background-color: $primary-color;
+    border: 1px solid $accent-color;
+
+    border-radius: 3px;
+}
+
+
+// map з кольорами, статусами у класах 
+$theme-colors: (
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+);
+
+.message{
+    // вибір кольору за допомогою map (перебирається за допомогою ключів - назва статусу та відповідний йому колір)
+    @each $status, $color in $theme-colors {
+        &--#{$status}{
+            background-color: $color;
+        }
+    }
+}
+
+
+// оператори, які доступні у SASS:       + - * / % == != < > <= >=
+
+
+// створення mixin (функцій). вони можуть бути з параметрами та без 
+@mixin size($width, $height, $color, $is-circle) {
+    margin: 0 auto;
+    width: $width;
+    height: $height;    
+    background-color: $color;
+    @if $is-circle {
+        border-radius: 100%;
+    }
+    @else {
+        border-radius: 0px;
+    }
+}
+
+// map для мобільної адаптації з переліком ключових точок
+$breaks: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+               
+.div3{
+
+    // виклик міксину з параметрами
+    @include size(100px, 200px, red, false);
+
+    // використання map у медіа-запиті (для отримання значення із map використовуємо функцію map-get куди передаємо назву map та ключ значення)
+    @media screen and (max-width: map-get($breaks, "sm")) {
+        @include size(200px, 300px, green, true);
+    }    
+
+}
+
+// анмімація
+.div4{
+
+    // виклик міксину з параметрами
+    @include size(100px, 100px, green, false);
+
+    // для підколючення анімації до елементу використовуємо параметр animation в який передаємо назву анімації, яку створимо нижче, далі тривалість анімації, тип та повторення анімації (infinite - безперервне, а можна вказувати затримку або тільки одне повторення)
+    animation: div4-animation 6s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite;
+}
+// створення самої анімації
+@keyframes div4-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
