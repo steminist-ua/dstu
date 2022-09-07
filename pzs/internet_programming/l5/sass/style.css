@@ -1,0 +1,81 @@
+div {
+  min-height: 100px;
+  border: 1px solid #ccc;
+  margin-top: 50px;
+}
+
+.div1 {
+  color: #ff0000;
+  font-size: 30px;
+  background-color: yellow;
+  padding: 30px;
+}
+
+.div1 {
+  background-color: #f8bbd0;
+  border: 1px solid #6a1b9a;
+  border-radius: 3px;
+}
+
+.message--success {
+  background-color: #28a745;
+}
+
+.message--info {
+  background-color: #17a2b8;
+}
+
+.message--warning {
+  background-color: #ffc107;
+}
+
+.div3 {
+  margin: 0 auto;
+  width: 100px;
+  height: 200px;
+  background-color: red;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 576px) {
+  .div3 {
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+    background-color: green;
+    border-radius: 100%;
+  }
+}
+
+.div4 {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 0px;
+  -webkit-animation: div4-animation 6s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite;
+          animation: div4-animation 6s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite;
+}
+
+@-webkit-keyframes div4-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes div4-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
