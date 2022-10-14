@@ -1,11 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
 import { Header } from './components/Header';
+import Todo from './todo/Todo';
 
 function App() {
   return (
     <div className="App App-header">
-      <Header />
+
+      {/* <Header /> */}
+
+      <Todo />
+
+
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
