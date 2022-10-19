@@ -34,6 +34,11 @@
         - LightGrayishBlue - `#EEF3F6`
 - оформити та надіслати загальний звіт.
 
+- **документація по flex**- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- **документація по sass** - https://sass-lang.com/documentation/
+- **документація по БЕМ** - https://ru.bem.info/methodology/quick-start/
+
+
 ## Доповнення до роботи (мобільна адаптація - медіа запити): 
 - Обов'язковість використання мета-тегу `viewport` у html https://www.w3schools.com/css/css_rwd_viewport.asp
 - Приклад медіа-запитів (мобільної адаптації). Тут же наведено ключові точки розмірів екранів (наприклад, Extra small devices - max-width: 600px) https://www.w3schools.com/css/css_rwd_mediaqueries.asp
