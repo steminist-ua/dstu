@@ -1,0 +1,29 @@
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    &__name{
+        font-size: calc(10px + 2vmin);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+    }
+
+    &__button{
+        font-size: calc(10px + 2vmin);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 7px;
+        background-color: rgba(255, 255, 255, 0.595);
+        text-decoration: none;
+
+        &:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+
+}
