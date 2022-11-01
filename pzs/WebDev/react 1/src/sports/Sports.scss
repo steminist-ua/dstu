@@ -1,0 +1,27 @@
+.sports{
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+
+    font-size: 12px;
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    &__item{
+        width: 100px;
+        background-color: rgb(120, 0, 144);
+        padding: 20px;
+        border-radius: 7px;
+        box-shadow: 9px 10px 5px 0px rgba(28,28,28,1);
+    }
+}
+
+.games{
+    width: 90vw;
+}
