@@ -1,0 +1,133 @@
+<!-- працюємо у VSCode - можна або встановити на комп'ютер, або працювати у браузерній версії: https://vscode.dev/ -->
+<!-- В цьому курсі ми працюємо з мовою розмітки HTML та стилями CSS. Для початку необхідно створити файл з розширенням html - назва_файлу.html -->
+<!-- У файлі html перше, що потрібно зробити - це прописати основну структуру сторінки. У VSCode за замовчанням є плагін Emmet, який дозволяє пришвидчити та спростити набір розмітки. Тому достатньо набрати знак оклику ! та натиснути кнопку Tab. Структура сторінки автоматично буде додана у файл. -->
+
+<!DOCTYPE html> <!-- Це інструкція, яка вказує на те, що використовується 5 версія мови розмітки HTML, тобто HTML5 -->
+<html lang="en"> <!-- тег html (парний, в кінці файлу закривається) - це початок файлу розмітки. Два головні теги повинні бути в середині цього тегу - 1) head, 2) body. Цей тег має атрибут lang, тобто мова, і значення en, тобто англійська. Це означає, що ми повідомляємо браузеру і пошуковим системам, що тексти на нашій сторінці саме на англійській (можна змінювати, можна видаляти цей параметр) -->
+<head> <!-- Тег head. Тут розміщується технічна інформація про сторінку + відбувається підключення стилів -->
+    <meta charset="UTF-8"> <!-- тег meta (не парний, одиночний, не має закриваючого) - це мета інформація про сторінку і тут вказуються різні атрибути. В цьому випадку атрибут charset - кодування, за замовченням вказане найкраще та найпошереніше кодування символів  UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Тут вказується, що наша розмітка підтримує браузер Internet Explorer, його оновлену версію Edge. Це потрібно, що сторінка коректно відображалася у різних браузерах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Тут вказується, що наша сторінка підтримує відображення для мобільних пристроїв -->
+
+    <title>Document</title> <!--Тег title (парний тег, має закриваючий) - це відображення назви вкладки у браузері. Тут можна вказувати будь-який текст, щоб при відкритті сторінки у браузері було видно про що ця сторінка (відображається назва сайту) -->
+</head> <!-- закриваючий тег head -->
+
+<body> <!-- Тег body (парний, має закриваючий) - це головний тег. Тут прописується весь вміст сторінки, всі її елементи, все, що ми хочемо відобразити у браузері -->
+    
+    <h1>Заголовок h1 - найбільший </h1> <!-- на одній сторінці html має бути тільки один тег h1 -->
+    <h2>Заголовок h2</h2>
+    <h3>Заголовок h3</h3>
+    <h4>Заголовок h4</h4>
+    <h5>Заголовок h5</h5>
+    <h6>Заголовок h6 - найменший</h6>
+
+    <!-- Для розміщення тексту на сторінці (текстових блоків, параграфів) використовується парний блочний тег - p -->
+
+    <!-- 
+        
+        Lorem - текстова заглушка (ще називається "риба"). Використовується коли сам зміст не важливий, а потрібно наче "схематично" відобразити де і як на сторінці буде розміщуватися текст. 
+        
+        За допомогою Emmet можна користуватися довжиною за замовчуванням у 30 слів. Для цього потрібно просто вказати lorem та натиснути Таб. Якщо потрібна інша довжина тексту - lorem та число без пробілу, наприклад, lorem4 згенерує текст на 4 слова. 
+        
+    -->
+    <p> 
+        <!-- <b>Lorem ipsum dolor sit amet consectetur</b> -->
+        <strong>Lorem ipsum dolor sit amet consectetur</strong>
+        , adipisicing elit. Voluptas, mollitia omnis optio consectetur autem quam?
+        Harum animi voluptatum enim officia assumenda tenetur impedit dolor fugit dignissimos libero sequi magni
+        deleniti, blanditiis voluptas soluta labore delectus nesciunt vitae, rerum nihil maxime, cumque incidunt modi!
+        Impedit totam veritatis dignissimos similique, obcaecati error vitae soluta laboriosam nesciunt aliquid maxime!
+        Expedita, illo? Temporibus culpa fuga optio fugiat officiis ad ab saepe numquam facilis quia aliquam animi
+        laboriosam cumque id, libero quo quod at repudiandae, architecto commodi minus, in corrupti delectus eveniet? Id
+        expedita nam mollitia dignissimos provident necessitatibus laudantium praesentium laboriosam, incidunt ipsa
+        rerum vitae consequatur obcaecati laborum corrupti, dolores odio non sit? Tempora nemo eveniet culpa id aperiam
+        odit quod? Sequi obcaecati, totam incidunt corrupti aperiam ab eius sapiente nostrum consectetur minima
+        assumenda autem placeat non aut amet, quam sunt! Non molestiae distinctio in vero ipsa, error quisquam quidem
+        totam modi animi temporibus exercitationem cumque deleniti, qui accusamus a commodi adipisci nisi, et sed
+        dignissimos? Consectetur est dicta ipsa velit explicabo placeat praesentium dolores sit neque tempora expedita
+        aut, distinctio fuga exercitationem, adipisci nemo error. Ipsam nisi exercitationem amet neque omnis sint,
+        expedita officia similique odit autem facilis! Deleniti doloribus beatae perferendis veritatis cupiditate ut
+        neque corporis excepturi enim hic eum eveniet voluptatibus non quaerat, reiciendis ea autem sapiente quidem
+        nulla totam earum aliquid! Expedita quod vero in harum. Ipsam quaerat reiciendis aliquam doloremque tempore
+        nihil, perspiciatis pariatur doloribus quae voluptate cupiditate expedita praesentium esse iure voluptatum,
+        illum incidunt. Totam tenetur quae doloremque, aspernatur asperiores, nisi nobis quasi, aut non impedit aperiam?
+        Perspiciatis quos quo aperiam nam totam perferendis, maiores repellendus dolore aliquid fugiat non ratione qui
+        sapiente beatae quae hic recusandae doloribus nesciunt? Voluptatibus sapiente labore consequuntur in. Libero
+        quae quisquam, voluptates dicta dolores, similique officiis quos fuga adipisci obcaecati doloribus ratione
+        voluptatem commodi blanditiis, itaque laborum et quo repellendus voluptatum ipsum repudiandae ducimus nostrum
+        delectus doloremque! Consectetur, architecto animi accusantium unde dolorem minima libero dolores aut debitis,
+        minus error veniam adipisci dolore omnis similique, ratione exercitationem doloremque sequi id optio.
+        Consectetur veniam quidem modi ratione nisi! Ducimus rem mollitia pariatur incidunt ex eaque amet a tenetur, non
+        in vel laborum at eos, expedita iusto possimus, esse magni laboriosam nihil tempore unde inventore sunt.
+        Consectetur sunt delectus ipsam sequi perferendis corporis ducimus, eveniet reprehenderit, tempore molestiae
+        iure eaque saepe odit atque, accusamus deleniti eum a molestias ex omnis velit aut fugit ipsa iusto. Ipsa quia
+        aliquam, facere natus quidem sequi itaque doloribus nostrum quisquam veniam nesciunt. Saepe magnam quod sit
+        consequatur quo ducimus culpa accusantium, alias eligendi sapiente labore aliquam? Modi tempora amet nulla! Ut
+        aliquid expedita, nemo ipsam praesentium sint, corrupti tenetur quibusdam nesciunt nulla repudiandae ea
+        voluptate a optio explicabo deleniti soluta. Magni optio quod repellendus eligendi ratione quam voluptate
+        consectetur reiciendis unde illo asperiores iste corrupti voluptatibus, nisi officiis vero esse maxime? Sapiente
+        necessitatibus nisi ullam assumenda officia, expedita mollitia aperiam repellendus maiores. Error modi culpa
+        aspernatur id vero sint quod, minima unde dolores non, totam at numquam quo! </p>
+
+    <p>
+        <!-- <i>Lorem ipsum dolor sit amet consectetur adipisicing elit</i>. <br>  -->
+        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit</em>. <br>
+        <u>Animi, iusto</u>.
+    </p>
+
+    <!-- Для того, щоб виділити текст жирним, використовується парний рядковий тег <b></b>. Цей тег не має впливу на пошукові системи. Якщо потрібно виділити жирним та вказати пошуковам, що це важливі ключові слова для видачі сторінки, тоді використовуємо парний тег <strong></strong>  -->
+
+    <!-- Для того, щоб виділити текст жирним, використовується парний рядковий тег <i></i>. Аналогічно до попереднього тегу, якщо потрібно виділити курсивним накресленням та вказати пошуковим системам, що це важливий зміст сторінки - парний тег <em></em> -->
+
+    <!-- Для того, щоб виділити текст жирним, використовується парний рядковий тег <u></u> -->
+
+    <!-- Одиночний (не парний) тег <br> - це перенос на новий рядок. Просто Enter на сторінці у браузері відображено не буде, все описується тегами -->
+
+    <p>
+        Цей текст написано у <sup>верхньому індексі</sup>. 
+        <br>
+        Цей текст виділено <sub>нижньому індексі</sub>.
+    </p>
+
+    <!-- У html є два типи списків - маркерований та нумерований -->
+
+    <!--Парний блочний тег <ul></ul> - це оголошення списку маркерованого. Тобто, кожен елемент списку буде позначено маркером.
+        
+        Кожен елемент списку вказується у парному блочному тезі <li></li>
+    -->
+
+    <ul>
+        <li>Lorem <sup>1</sup></li>
+        <li>Lorem <sub>2</sub></li>
+        <li>Lorem 3</li>
+    </ul>
+
+    <!-- ul>li*7 - короткий запис за допомогою Emmet -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+     <!--Парний блочний тег <ol></ol> - це оголошення списку нумерованого. Тобто, кожен елемент списку буде позначено цифрою.
+        
+        Кожен елемент списку також вказується у парному блочному тезі <li></li>
+    -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <hr>  <!-- тег hr - сіра горизонтальна лінія на всю ширину вікна браузеру -->
+
+
+</body> <!-- закриваючий тег body -->
+
+</html> <!-- закриваючий тег html -->
