@@ -1,0 +1,36 @@
+h1, h2, p, img, a{
+    background-color: aqua;
+
+    padding: 70px;
+    /* padding-left: 70px;
+    padding-right: 70px; */
+
+    /* padding: 5px 70px; */
+
+    /* padding: 100px 50px 10px; */
+
+    /* padding: 100px 500px 400px 60px; */
+
+    margin: 20px;
+}
+
+/* img, a{
+    display: block;
+} */
+
+.text{
+    color: blue;
+    background-color: gold;
+}
+a{
+    border-radius: 100%;
+}
+h1{
+    transition: all 0.3s ease;
+}
+h1:hover{
+    text-align: center;
+    background-color: blue;
+    font-size: 100px;
+    cursor: pointer;
+}
