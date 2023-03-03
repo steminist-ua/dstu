@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- підключення стилів css - одиночний тег link. В атрибуті href потрібно вказати шлях до файлу зі стилем -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Lorem</h1>
+    <h2>Lorem 2</h2>
+
+    <!-- строчний одиночний тег img - для вставки зображення на сторінку. 
+
+        В атрибуті src вказується шлях до зображення (в тому числі і URL). 
+
+        Атрибути alt - в ньому вказуємо текст, який буде відображатися, якщо зображення з якихось причин не може бути відображено на сторінці (наприклад, було видалено з місця свого розміщення). Зазвичай вказується одне-два слова, які описують зображення 
+    -->
+    <img src="./Без названия.jpg" alt="">
+
+    <!-- строчний парний тег a - тег для вставки посилання. 
+        
+        href - адреса посилання, куди користувач перейде. Це може бути посилання по сторінці, до певного елементу з айдішником, тоді вказується href="#айді_елемента". Може бути посилання на власний інший html файл у проєкті, тоді вказується href="./page2.html". І останній варіант - зовнішнє посилання, на якусь адресу, наприклад href="https://www.google.com/" 
+
+        target - атрибут, який відповідає за те, як саме відкриється посилання. За замовчуванням (тобто, без вказання цього атрибуту) посилання відкриваються у тій же вкладці в браузері, де відкрита сторінка з розміщеним тегом посилання. Якщо необхідно відкрити посилання у новій вкладці браузеру, тоді вказуємо target="_blank". Всі зовнішні посилання потрібно відкривати саме у новій вкладці
+    -->
+    <a href="#" target="_blank">Text</a>
+
+    <!-- строчний парний тег <span> - використовуємо, коли потрібно слову/декільком задати певний стиль -->
+    <p> <span class="text2">Lorem ipsum</span> dolor sit amet consectetur, adipisicing elit. Autem maxime ullam temporibus suscipit, iusto ad ipsum laboriosam ratione laborum qui? Atque harum aliquid dicta, architecto sint, odio totam consequuntur ducimus sunt, dolorem similique obcaecati illo? </p>
+
+
+    <!-- ul>li*3>a:blank - емет-запис, який дозволяє швидко зробити маркерований список з трьома елементами, в середині яких будуть посилання з відкриттям у новій вкладці -->
+
+    <ul>
+        <li><a href="#main">Внутрішнє посилання (за айдішніком Lorem 4)</a></li>
+        <li><a href="./page2.html" target="_blank">На іншу сторінку в проєкті</a></li>
+        <li><a href="https://www.google.com/" target="_blank">Зовнішнє посилання</a></li>
+    </ul>
+
+    <h2>Lorem 3</h2>
+    <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta saepe nam aliquid natus asperiores, maxime repudiandae adipisci maiores dolore, molestiae assumenda unde eveniet quas. Illum temporibus ab impedit eius, incidunt necessitatibus non ducimus tempora asperiores excepturi, ipsum aliquid at blanditiis magni iusto inventore saepe atque. Accusamus, quis repellendus dolore velit aliquid voluptate saepe. Ipsum ab iure accusantium, enim voluptatum sapiente tempore asperiores laboriosam saepe minima reprehenderit eligendi, autem nemo sint blanditiis illum laborum voluptatibus et. Vitae repellendus voluptas officiis accusantium minima debitis est illum enim dicta sed delectus, vero, iusto mollitia. Numquam ea ipsum recusandae rem earum consequatur voluptate nostrum quos sed nobis eveniet in exercitationem nisi doloremque officiis amet animi maxime, maiores quasi neque tempore soluta. A obcaecati praesentium placeat quia possimus corrupti, culpa earum fuga molestias officia ipsum esse non sunt assumenda tempore magni voluptate, eius ullam veritatis. Obcaecati rem unde, delectus atque consequuntur quis, ea laudantium facilis deleniti quod commodi modi optio quo adipisci provident vitae, molestiae accusamus ratione numquam est. Commodi sit perspiciatis vel praesentium aliquam libero molestiae nisi tempore molestias illo totam, maiores voluptas culpa unde nam laborum. Eius eaque, aliquid vel asperiores possimus dicta reprehenderit iusto, non dignissimos ullam odit blanditiis error dolorum! </p>
+
+    <h2 id="main">Lorem 4</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta voluptates dignissimos aliquid temporibus neque at, debitis vel voluptas sint quo corrupti natus vitae tempore possimus maiores? Soluta numquam est magnam provident ex ratione nam veniam nihil, incidunt excepturi. Accusantium dolorum harum, quos adipisci vel ullam rerum, officiis facilis dolorem eos obcaecati consectetur modi culpa nihil reprehenderit dicta! Sed consectetur natus laborum atque, quibusdam harum quam et impedit qui? Unde consequatur nam, possimus vitae voluptas, voluptatum sapiente optio ducimus accusamus dicta ab. Earum, deleniti amet voluptas minima sit corrupti non praesentium et, quidem laudantium aspernatur vero commodi nulla sequi explicabo ea laboriosam porro sint ab unde quam, culpa aperiam iusto aliquam. Vitae atque nulla natus ullam, fugit aut voluptas nesciunt non deleniti explicabo labore. Praesentium obcaecati magnam nisi labore et sequi, fugiat earum fuga ipsam, temporibus corporis facere reiciendis a explicabo impedit, nostrum quos? Illum aliquam rerum excepturi facilis consequuntur quibusdam doloremque ducimus praesentium at aspernatur itaque, voluptates nihil nesciunt! Illo consectetur rerum beatae quo ipsa molestiae, facilis debitis distinctio dolorem ut hic aut animi accusamus obcaecati dicta, sint eos, tempore vel sequi optio dolores repudiandae saepe modi soluta? Fuga ipsa quisquam dolore pariatur omnis veniam ipsum accusamus excepturi quasi ut doloremque rem aliquid et, quae ea. Laborum expedita magnam odio consequuntur, rerum perspiciatis magni delectus nihil ipsam officia ducimus maxime pariatur reprehenderit voluptas. Totam animi inventore assumenda? Deleniti illo magnam quidem, impedit facere placeat optio, rem eos nesciunt id possimus dolores dignissimos incidunt tenetur doloremque! Tempore repellat placeat veritatis quia natus maiores magnam voluptatibus aperiam optio ex eos reprehenderit, aut suscipit officia quas doloribus alias quaerat illo cumque eius atque! Id soluta nam sequi veniam placeat reiciendis. Possimus harum adipisci sequi sint esse ducimus blanditiis consectetur, molestiae delectus, optio animi ipsam quaerat. Rerum odio mollitia error sapiente iusto? Recusandae? </p>
+
+    <h2>Lorem 5</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consectetur eos praesentium nemo? Odit quibusdam quisquam recusandae architecto cupiditate et obcaecati reprehenderit ipsa totam. Voluptatem alias sapiente quidem exercitationem rem nihil eum nobis nesciunt error libero nemo vero, fugit tenetur eveniet consequatur ea eos architecto praesentium. Illum nobis ipsam sint, quis repellat maiores. Ut quis officia minus eum? Dolorem, voluptatum vero, alias expedita corrupti mollitia pariatur, quis magnam molestias deleniti blanditiis nihil facilis adipisci non error quo minima quod atque fugit! Necessitatibus quos, sit quod repellat quam voluptate mollitia? Veniam accusamus odio sapiente officia in, doloribus alias excepturi adipisci rerum qui eaque dolorum quo harum totam ipsa temporibus quisquam maiores consequatur commodi necessitatibus beatae aliquam officiis, quia nisi! Quidem accusamus magnam, libero perferendis provident ipsum fuga quisquam dignissimos soluta rerum aliquam aliquid. Dicta, amet. Velit minus nesciunt ex amet ipsum, deleniti, tempore itaque, temporibus quibusdam sunt inventore sapiente blanditiis. Possimus accusamus vitae nam adipisci ex sit voluptatem? Harum eius dolor architecto aut inventore, natus sed voluptatum illum recusandae enim unde veritatis accusamus in consequatur eveniet voluptatibus doloribus sit, iusto eos omnis vel dignissimos nihil. Temporibus culpa rem quae, assumenda dolor autem saepe velit aspernatur, at odit in deserunt tempore repellat dolore non praesentium accusantium? Eius nam totam sequi deleniti nisi ut quaerat alias in tenetur animi eaque ullam eos itaque quibusdam qui, sunt corporis cupiditate non, quo maxime rem vel delectus quae? Consectetur dolores, nemo quas cupiditate sint blanditiis eos atque temporibus? Eos tenetur consequuntur in. Aut at, officia similique quas iure ea. Iusto necessitatibus reprehenderit distinctio iste laborum at dolor perspiciatis corrupti minima ratione voluptate eligendi, fuga natus aliquid nobis ab aut expedita laboriosam cum aliquam, dolore neque tempore? Molestiae itaque quaerat debitis delectus corrupti sit incidunt sequi, possimus exercitationem ipsum expedita neque reiciendis odit molestias blanditiis nam placeat maiores harum! Blanditiis, dignissimos, modi quam vel debitis fugiat officia ut delectus est perspiciatis hic similique amet. Voluptatum delectus, illum animi fugit tenetur rem deleniti fugiat corrupti adipisci! Soluta non dolor officia accusamus architecto necessitatibus libero doloremque minima aut velit veritatis minus, similique incidunt harum aspernatur itaque aliquam optio consequatur labore vero nostrum quisquam? Consequuntur aliquid porro perferendis a non fuga nostrum error ipsum optio, ducimus suscipit atque illo esse iste quis beatae, molestiae, obcaecati minus odit! Minus quo, quaerat et sint ducimus quod obcaecati, libero voluptatibus, nostrum earum incidunt ipsa. Ipsa ut dolor at dicta, numquam asperiores nam reiciendis. Harum assumenda quaerat blanditiis labore. Maiores delectus voluptas obcaecati. Illo accusamus aliquid molestias similique quam velit id dolorum, eius itaque sequi incidunt fugiat eos impedit ipsum excepturi error harum ratione saepe aspernatur. Obcaecati similique corporis soluta blanditiis explicabo nostrum asperiores dolorem, officia optio eaque? Maiores voluptatem harum obcaecati. Earum sunt debitis dolorem quod aliquam inventore animi. Animi quisquam doloribus quis adipisci nulla facilis cum laudantium mollitia veniam repudiandae! Ad quo rerum saepe reiciendis id expedita fuga dignissimos atque perferendis numquam nulla, velit quam voluptates, dolore optio sed veritatis error modi culpa. Blanditiis laborum voluptate quia, ipsum perspiciatis nesciunt inventore reiciendis?</p>
+    
+</body>
+</html>
