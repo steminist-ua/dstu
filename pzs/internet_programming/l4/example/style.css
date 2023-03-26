@@ -31,17 +31,14 @@ body {
 .imoveis article {
   margin: 30px 0;
 }
-
 .imoveis article img {
   max-width: 100%;
 }
-
 .imoveis article h2 {
   font-size: 20px;
   color: #686868;
   margin-bottom: 25px;
 }
-
 .imoveis .botao {
   padding: 10px 15px;
   background-color: #127d00;
@@ -63,5 +60,4 @@ body {
   .imoveis article:nth-child(even) {
     margin-left: 20px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

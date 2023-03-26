@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -9,19 +8,16 @@
   padding: 20px;
   margin-top: 100px;
 }
-
 .container .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .container .row .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-
 .container .row .col-75 {
   float: left;
   width: 75%;
@@ -49,5 +45,4 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   float: right;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
