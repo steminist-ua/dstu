@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.d1 {
+  background-color: aquamarine;
+  margin-top: 50px;
+}
+
+.wrapper {
+  margin: 50px auto;
+  width: 600px;
+  height: 300px;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+input, button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}/*# sourceMappingURL=style.css.map */

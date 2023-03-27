@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.d1{
+    background-color: aquamarine;
+    // border: 1px solid rgba(132, 57, 57, 0.532);
+    margin-top: 50px;
+}
+
+.wrapper{
+    margin: 50px auto;
+    width: 600px;
+    height: 300px;
+    background-color: antiquewhite;
+    position: relative;
+    // padding: 1px 1px;
+    // border: 1px solid rgba(132, 57, 57, 0.532);
+}
+
+input, button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    // margin: 50px;
+}
