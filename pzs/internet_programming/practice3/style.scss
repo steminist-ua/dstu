@@ -1,0 +1,69 @@
+// змінні у синтаксисі scss предпроцесору sass
+// знак $ далі без пробілу назва змінної одним словом (для розділу використовувати тире або нижнє підкреслювання). Далі значення через : 
+$primary-color: #333;
+$background-color: #fff7b3;
+$title-font-size: 46px; 
+$text-font-size: 20px; 
+$font-stack: Helvetica, sans-serif;
+
+// міксин - аналог функції. Міксин може бути без параметрів (тоді порожні круглі скобки), або з параметрами (їх перелічення у круглих скобках через кому) 
+@mixin viewDiv($width, $height, $background, $border-radius){
+    width: $width;
+    height: $height;
+    background-color: $background;
+    border-radius: $border-radius;
+}
+
+.wrapper{
+    margin: 0 auto;
+
+    // використання змінної у коді. Замість значення вказуємо назву змінної
+    background-color: $background-color;
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+
+    // вкладеність елементів у scss зазначається вкладеністю у фігурні скобки батьківського елементу 
+    // якщо вкладений елемент має у своїй назві класу назву батьківського елементу, тоді у селекторі використовуємо знак поєднання рядків - &
+    &__title{
+        font-family: $font-stack;
+        font-size: $title-font-size;
+    }
+
+    &__text{
+        font-size: $text-font-size;
+        color: $primary-color;
+    }
+
+    &__link{
+        text-decoration: none;
+        display: block;
+        background-color: rgb(158, 158, 255);
+        color: #fff;
+        width: 50px;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 7px;
+
+        &--info{
+            background-color: rgb(255, 155, 41);
+        }
+        &--alarm{
+            background-color: rgb(255, 0, 0);
+        }
+    }
+}
+
+.div{
+    &__d1{
+        // використання міксину у коді. спочатку вказуємо @include, далі назву міксину, круглі скобки, в яких перелічуються значення параметрів (відповідно, якщо міксин з параметрами) 
+        @include viewDiv(200px, 200px, rgb(255, 255, 0), 100%);
+    }
+    &__d2{
+        @include viewDiv(600px, 100px, rgb(0, 234, 255), 12px);
+    }
+    &__d3{
+        @include viewDiv(200px, 200px, rgb(136, 0, 255), 0px);
+    }
+}
