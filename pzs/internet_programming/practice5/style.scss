@@ -1,0 +1,25 @@
+body{
+    height: 1000px;
+}
+.wrapper{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    position: relative;
+
+    &__item{
+        width: 200px;
+        height: 200px;
+        background-color: coral;
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+
+        // position: inherit;
+    }
+}
+button{
+    position: fixed;
+    bottom: 0;
+}

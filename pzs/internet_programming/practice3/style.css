@@ -36,6 +36,7 @@
   height: 200px;
   background-color: rgb(255, 255, 0);
   border-radius: 100%;
+  margin: 0 auto;
 }
 .div__d2 {
   width: 600px;
@@ -48,4 +49,20 @@
   height: 200px;
   background-color: rgb(136, 0, 255);
   border-radius: 0px;
+}
+
+.list__item-1 {
+  background-color: blueviolet;
+}
+.list__item-2 {
+  background-color: aqua;
+}
+.list__item-3 {
+  background-color: blueviolet;
+}
+.list__item-4 {
+  background-color: aqua;
+}
+.list__item-5 {
+  background-color: blueviolet;
 }/*# sourceMappingURL=style.css.map */

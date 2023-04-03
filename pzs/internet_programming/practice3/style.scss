@@ -7,12 +7,20 @@ $text-font-size: 20px;
 $font-stack: Helvetica, sans-serif;
 
 // міксин - аналог функції. Міксин може бути без параметрів (тоді порожні круглі скобки), або з параметрами (їх перелічення у круглих скобках через кому) 
-@mixin viewDiv($width, $height, $background, $border-radius){
+@mixin viewDiv($width, $height, $background, $border-radius, $isCenter: false){
     width: $width;
     height: $height;
     background-color: $background;
     border-radius: $border-radius;
+
+    @if($isCenter){
+        margin: 0 auto;
+    }
+    // @else if(){}
+    // @else {}
 }
+
+
 
 .wrapper{
     margin: 0 auto;
@@ -58,7 +66,7 @@ $font-stack: Helvetica, sans-serif;
 .div{
     &__d1{
         // використання міксину у коді. спочатку вказуємо @include, далі назву міксину, круглі скобки, в яких перелічуються значення параметрів (відповідно, якщо міксин з параметрами) 
-        @include viewDiv(200px, 200px, rgb(255, 255, 0), 100%);
+        @include viewDiv(200px, 200px, rgb(255, 255, 0), 100%, true);
     }
     &__d2{
         @include viewDiv(600px, 100px, rgb(0, 234, 255), 12px);
@@ -67,3 +75,26 @@ $font-stack: Helvetica, sans-serif;
         @include viewDiv(200px, 200px, rgb(136, 0, 255), 0px);
     }
 }
+
+.list{
+    @for $i from 1 through 5{
+        &__item-#{$i}{
+            @if($i%2==0){
+                background-color: aqua;
+            }
+            @else{
+                background-color: blueviolet;
+            }
+        }
+    }
+}
+// @each $item in list{
+//     .list__item-#{$item}{
+//         @if($item%2==0){
+//             background-color: rgb(217, 255, 0);
+//         }
+//         @else{
+//             background-color: rgb(6, 255, 14);
+//         }
+//     }
+// }
