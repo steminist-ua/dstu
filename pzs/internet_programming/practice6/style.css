@@ -1,1 +1,22 @@
-/*# sourceMappingURL=style.css.map */
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 20px;
+  row-gap: 100px;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.wrapper__item {
+  background-color: aqua;
+  background-image: url("");
+  background-size: cover;
+  background-size: contain;
+  border: 1px solid black;
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */

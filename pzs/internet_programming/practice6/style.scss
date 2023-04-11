@@ -1,8 +1,61 @@
 .wrapper{
+    height: 100vh;
+    // width: 100vw;
+    display: flex;
+
+    flex-direction: row;
+    // flex-direction: column;
+    // flex-direction: row-reverse;
+    // flex-direction: column-reverse;
+
+    flex-wrap: nowrap;
+
+    flex-flow: row nowrap;
+
+    justify-content: flex-start;
+    // justify-content: flex-end;
+    // justify-content: center;
+    // justify-content: space-between;
+    // justify-content: space-around;
+    // justify-content: space-evenly;
+
+    align-items: flex-start;
+    // align-items: flex-end;
+    // align-items: center;
+    // align-items: stretch;
+    // align-items: baseline;
+
+    align-content: flex-start;
+    // align-content: flex-end;
+    // align-content: center;
+    // align-content: stretch;
+    // align-content: space-between;
+    // align-content: space-around;
+
+    gap: 20px;
+    row-gap: 100px;
+    column-gap: 100px;
 
     &__item{
-        
+        background-color: aqua;
+        background-image: url("");
+        background-size: cover;
+        background-size: contain;
+        border: 1px solid black;
+        width: 100px;
     }
 
 
 }
+// body{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     align-content: center;
+//     height: 100vh;
+// }
+// div{
+//     width: 100px;
+//     height: 100px;
+//     background-color: blueviolet;
+// }
