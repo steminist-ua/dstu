@@ -5,12 +5,20 @@
   flex-wrap: nowrap;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: flex-start;
+  align-items: center;
   align-content: flex-start;
+  align-content: center;
   gap: 20px;
   row-gap: 100px;
   -moz-column-gap: 100px;
        column-gap: 100px;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }
 .wrapper__item {
   background-color: aqua;
@@ -19,4 +27,12 @@
   background-size: contain;
   border: 1px solid black;
   width: 100px;
+}
+@media screen and (max-width: 600px) {
+  .wrapper__item {
+    font-size: 20px;
+  }
+}
+.wrapper__item2 {
+  flex-grow: 2;
 }/*# sourceMappingURL=style.css.map */
