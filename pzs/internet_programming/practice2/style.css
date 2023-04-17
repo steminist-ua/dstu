@@ -15,6 +15,10 @@
 .div:hover{
     background-color: beige;
 }
+/* 
+    пробіли, >, ~, + тощо - конспект з поясненнями про різні типи селекторів у css - https://github.com/steminist-ua/dstu/tree/master/pzs/internet_programming/selectors.md
+    
+ */
 /* .div p{
     line-height: 35px;
 } */
