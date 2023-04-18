@@ -108,15 +108,21 @@
     // column-gap задає проміжок між стовпчиками.
     column-gap: 100px;
 
+    // адаптація під мобільні екрани
+    // директива - @media, в якій потрібно вказати розміри екрану, для якого робиться адаптація. В цьому прикладі - вказано зміну зовнішнього вигляду під екрани, розмір яких не більше 600px (max-width: 600px). Далі у фігурних скобках вказується перелік параметрів, що саме має змінитися на екранах вказаного розміру. На приклад, за замовчуванням елементи розміщувалися в рядок, а ось для екранів не більше 600px мають стати в колонку
     @media screen and (max-width: 600px){
         flex-direction: column;
     }
 
     &__item{
         background-color: aqua;
-        background-image: url("");
-        background-size: cover;
-        background-size: contain;
+        
+
+        // детальніше про налаштування фонового зображення - https://github.com/steminist-ua/dstu/blob/master/pzs/internet_programming/background.md
+        // background-image: url("");
+        // background-size: cover;
+        // background-size: contain;
+
         border: 1px solid black;
         width: 100px;
 
@@ -144,3 +150,14 @@
 //     height: 100px;
 //     background-color: blueviolet;
 // }
+
+
+// це ще один приклад адаптації. директиву можна вказувати в кінці документу зі стилями (або в окремому файлі, підключаючи до основного файлу зі стилями). В такому випадку, необхідно в середині запиту вказувати селектор, для кого, для яких елементів прописано зміни. Зверніть увагу, можна одразу вказувати перелік всіх необхідних селекторі, за принципом звичайного написання стилів, поза медіа запитами
+@media screen and (max-width: 600px){
+    body{
+        background-color: cadetblue;
+    }
+    .wrapper{
+        font-size: 20px;
+    }    
+}
