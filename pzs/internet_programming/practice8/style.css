@@ -1,0 +1,82 @@
+.container{
+    max-width: 1230px;
+    padding: 100px 15px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row--left{
+    transform: translateX(-100%);
+    animation: slide 4s ease infinite;
+}
+
+.row--right{
+    transform: translateX(100%);
+    animation: slide2 4s ease infinite;
+
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(-100%)
+    }
+    50%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        transform: translateX(100%)
+    }
+    50%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    animation: anim s ease infinite;
+}
+
+@keyframes anim {
+    5%{
+        transform: translateX(100px) rotate(360deg);
+    }
+    10%{
+        transform: translateX(100px) translateY(30px);
+    }
+    15%{
+        transform: translateX(200px) rotate(360deg);
+    }
+    20%{
+        transform: translateX(200px) translateY(60px);
+    }
+    25%{
+        transform: translateX(300px) rotate(360deg);
+    }
+    30%{
+        transform: translateX(300px) translateY(90px);
+    }
+}
