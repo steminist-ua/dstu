@@ -1,0 +1,35 @@
+/* задаємо базовий розмір шрифту у html */
+html {
+    font-size: 16px;
+}
+
+/* задаємо розміри для заголовку та тексту в rem */
+.title {
+    font-size: 2rem;
+    /* 2 * 16px = 32px */
+    margin-bottom: 3rem;
+    /* 1 * 16px = 16px */
+    padding: 3rem;
+    background-color: azure;
+}
+
+.text {
+    font-size: 1rem;
+    /* 1 * 16px = 16px */
+    margin-bottom: 3rem;
+    /* 2 * 16px = 32px */
+    padding: 3rem;
+    background-color: azure;
+}
+
+/* задаємо відступи для контейнера в rem */
+.container {
+    padding: 2rem;
+    /* 2 * 16px = 32px */
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 20px;
+    }
+}
