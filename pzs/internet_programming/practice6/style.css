@@ -56,9 +56,6 @@
 }
 .wrapper__item {
   background-color: aqua;
-  background-image: url("");
-  background-size: cover;
-  background-size: contain;
   border: 1px solid black;
   width: 100px;
 }
@@ -69,4 +66,13 @@
 }
 .wrapper__item2 {
   flex-grow: 2;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: cadetblue;
+  }
+  .wrapper {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

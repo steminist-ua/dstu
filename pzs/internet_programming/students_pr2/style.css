@@ -1,0 +1,50 @@
+.item__image {
+  position: relative;
+}
+.item__image::before {
+  content: "3 slot";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  right: 10px;
+  bottom: -50%;
+}
+
+.wrapper {
+  padding: 100px;
+}
+
+body {
+  color: white;
+  font-size: 20px;
+  background-color: blue;
+}
+
+.header__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.header__logo span {
+  font-size: 30px;
+  font-weight: 700;
+  color: orange;
+}
+.header__sign {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+.header__sign span {
+  color: orange;
+}
+.header__form {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */
