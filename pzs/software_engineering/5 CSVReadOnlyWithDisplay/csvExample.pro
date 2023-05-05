@@ -13,7 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        ex1.cpp \
+        ex2.cpp \
+        mainwindow.cpp \
+        task.cpp
 
 HEADERS  += mainwindow.h
 
