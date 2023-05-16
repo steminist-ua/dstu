@@ -1,0 +1,12 @@
+.header,.hero{
+    background-color: #D8E5FF;
+}
+.line{
+    background-color: red;
+    width: 50px;
+    height: 2px;
+}
+
+.med{
+    background-color: #FFDCE0;
+}
