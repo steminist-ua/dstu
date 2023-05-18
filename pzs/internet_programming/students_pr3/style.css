@@ -10,3 +10,18 @@
 .med{
     background-color: #FFDCE0;
 }
+.min-w-100{
+    min-width: 100%;
+}
+.mt-10{
+    margin-top: 300px !important; 
+}
+.heart{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    line-height: 96px;
+}
