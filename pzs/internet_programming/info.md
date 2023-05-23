@@ -11,7 +11,8 @@
 | **GitHub** |    [🔗Посилання](https://github.com/)   |
 | **Інструкція для налаштування VSCode + Git + GitHub** |    [🔗Посилання](https://github.com/steminist-ua/dstu/blob/master/settings-vscode-github/settings-vscode-github.md)   |
 | **GoFullPage - Full Page Screen Capture** - розширення для Chrome, яке робить скрін повної сторінки (зі скролом) |    [🔗Посилання](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl)   |
-| Конспект **CSS Селектори** |     [🔗Посилання](https://github.com/steminist-ua/dstu/tree/master/pzs/internet_programming/selectors.md)   |
+| Конспект **CSS Селектори** |     [🔗Посилання](https://github.com/steminist-ua/dstu/tree/master/pzs/internet_programming/selector-priority.md)   |
+| **Пріоритети CSS селекторів** |     [🔗Посилання](https://github.com/steminist-ua/dstu/tree/master/pzs/internet_programming/selectors.md)   |
 | **Параметри CSS для налаштування фону** |    [🔗Посилання](https://github.com/steminist-ua/dstu/tree/master/pzs/internet_programming/background.md)   |
 | **Таблиця з поточними статусами та оцінками ЛР** |    [🔗Посилання](https://docs.google.com/spreadsheets/d/16mC2fxsnQef4K7MC83gZLT4QP92_9VwixtKNFq3-bKY/edit?usp=sharing)   |
 | Наглядний гайд по **Flex** |     [🔗Посилання](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)   |
