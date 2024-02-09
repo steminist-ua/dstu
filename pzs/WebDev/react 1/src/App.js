@@ -14,8 +14,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* <Route path='/' element={<Login />}></Route> */}
-          {/* <Route path='/' element={<Sports />}></Route> */}
-          <Route path='/' element={<Genre />}></Route>
+          <Route path='/' element={<Sports />}></Route>
+          {/* <Route path='/' element={<Genre />}></Route> */}
           <Route path='profile' element={<Hello text="Have a nice day!" />}></Route>
           <Route path='weather' element={<Weather />}></Route>
           <Route path='open_sport' element={<OpenSport />}></Route>
